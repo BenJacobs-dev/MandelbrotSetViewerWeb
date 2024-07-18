@@ -159,6 +159,7 @@ function addControls(canvas, drawScene) {
 function configureGL(canvas){
   var gl = canvas.getContext("webgl2");
   if (!gl) {
+    console.error("WebGL2 is not supported in your browser");
     return;
   }
 
